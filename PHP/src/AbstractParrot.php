@@ -1,27 +1,32 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Parrot;
 
 abstract class AbstractParrot
 {
     /**
-     * @var int ParrotTypeEnum
-     */
-    private $type;
-    /**
      * @var int
      */
     protected $numberOfCoconuts;
+
     /**
      * @var float
      */
     protected $voltage;
+
     /**
      * @var bool
      */
     protected $isNailed;
 
-    public function __construct(int $type, float $numberOfCoconuts, float $voltage, bool $isNailed)
+    /**
+     * @var int ParrotTypeEnum
+     */
+    private $type;
+
+    public function __construct(int $type, int $numberOfCoconuts, float $voltage, bool $isNailed)
     {
         $this->type = $type;
         $this->numberOfCoconuts = $numberOfCoconuts;
@@ -29,13 +34,18 @@ abstract class AbstractParrot
         $this->isNailed = $isNailed;
     }
 
-    protected function getBaseSpeed(): float
-    {
-        return 12.0;
-    }
-
     public function getSpeed(): float
     {
         return $this->getBaseSpeed();
+    }
+
+    public function getType(): int
+    {
+        return $this->type;
+    }
+
+    protected function getBaseSpeed(): float
+    {
+        return 12.0;
     }
 }

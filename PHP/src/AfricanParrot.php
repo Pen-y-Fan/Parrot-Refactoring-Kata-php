@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Parrot;
 
 class AfricanParrot extends AbstractParrot
@@ -8,7 +10,8 @@ class AfricanParrot extends AbstractParrot
     {
         return max(0, $this->getBaseSpeed() - $this->getLoadFactor() * $this->numberOfCoconuts);
     }
-    private function getLoadFactor()
+
+    private function getLoadFactor(): float
     {
         return 9.0;
     }
