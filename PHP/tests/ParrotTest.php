@@ -8,7 +8,6 @@ use PHPUnit\Framework\TestCase;
 
 class ParrotTest extends TestCase
 {
-
     /** @test */
     public function getSpeedOfEuropeanParrot()
     {
