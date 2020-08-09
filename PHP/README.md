@@ -1,4 +1,4 @@
-# Parrot Refactoring Kata
+# Parrot Refactoring Kata - PHP
 
 This is the PHP version of the Parrot Refactoring Kata. The project is fully functional, with a full test suite. The objective of this Kata is improve the code. The tests do not normally need to be changed.
 

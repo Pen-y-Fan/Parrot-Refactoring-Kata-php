@@ -8,4 +8,16 @@ Refactor this code, take small steps, run the tests often. See how small and bea
 Acknowlegements
 ---------------
 
-This code is heavily inspired by one of the examples in Martin Fowler's book "Refactoring". It's a classic, and if it's not on your bookshelf already I suggest you treat yourself to a copy!
+This code is heavily inspired by one of the examples in Martin Fowler's book "Refactoring". It's a classic, and if it's
+ not on your bookshelf already I suggest you treat yourself to a copy!
+
+## Parrot Refactoring Kata - PHP
+
+My attempt at the Parrot refactoring Kata in PHP. 
+
+## Spoiler alert!
+
+To view my attempt:
+ 
+* Checkout the `PHP` branch.
+* Navigate to **php** directory
